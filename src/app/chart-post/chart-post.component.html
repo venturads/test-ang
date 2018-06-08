@@ -1,0 +1,11 @@
+<p>
+  chart-post works!
+</p>
+
+<div>
+  <button (click)="fetchClient()">Fetch people</button>
+  <hr />
+  <ul>
+    <li *ngFor="let clients of client$ | async">{{ clients.name }}, {{clients.title}}</li>
+  </ul>
+</div>

@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+button, .btn{
+  border: 1px solid black!important;
+  color: black;
+}
+.button-primary{
+  background: white !important;
+  border: 1px black !important;
+}
+.card{
+  background: whitesmoke;
+  box-shadow: 2px 2px 5px gray;
+}
