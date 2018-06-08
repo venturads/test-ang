@@ -8,20 +8,23 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { ChartPostComponent } from './chart-post/chart-post.component';
 import { ChartPostService } from './chart-post/chart-post.service';
+import { InfiniteScollerDirective } from './infinite-scoller.directive';
+import { PostsService } from './posts.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    ChartPostComponent
+    ChartPostComponent,
+    InfiniteScollerDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ChartPostService],
+  providers: [ChartPostService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

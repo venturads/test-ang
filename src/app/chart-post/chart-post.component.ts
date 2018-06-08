@@ -12,6 +12,7 @@ export class ChartPostComponent implements OnInit {
    constructor(private clientService: ChartPostService){}
  
    fetchClient(){
+     if(this.client$ == null){}
      this.client$ = this.clientService.fetchClient();
    }
 
