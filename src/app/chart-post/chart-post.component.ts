@@ -870,7 +870,7 @@ export class ChartPostComponent implements AfterViewInit {
       type: 'line',
       // data: this.data24h,
       options: {
-        responsive: false,
+        responsive: true,
         display: true,
         fontSize: '6px',
         padding: '0px',
