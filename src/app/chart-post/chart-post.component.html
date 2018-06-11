@@ -1,11 +1,25 @@
-<p>
-  chart-post works!
-</p>
-
 <div>
   <button (click)="fetchClient()">Fetch people</button>
   <hr />
   <ul>
-    <li *ngFor="let clients of client$ | async">{{ clients.name }}, {{clients.title}}</li>
+    <li *ngFor="let clients of client$ | async">
+      <p *ngIf="clients==null;else template">Loading....</p>
+      {{ clients.name }}, {{clients.title}}
+    </li>
+    
   </ul>
+
+
+<div class="mychart">
+    <!-- <button (click)="set60m();" [disabled]="currentChart=='60m'">
+        60m
+    </button>
+    <button (click)="set24h();" [disabled]="currentChart=='24h'">
+        24h
+    </button>
+    <button (click)="set7d();" [disabled]="currentChart=='7d'">
+        7d
+    </button> -->
+    <canvas id="myChartSite" width="900px" height="350px;"></canvas>
+</div>
 </div>

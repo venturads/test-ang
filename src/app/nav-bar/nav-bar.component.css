@@ -19,5 +19,6 @@ overflow: none;
 }
 .modal-body{
   height: 300px;
+  width: 100%;
   overflow-y: scroll;
 }
